@@ -103,3 +103,26 @@ if (n >= 1) {
 */
 
 
+
+//Ejercicios de arrays
+
+
+
+/**                   1.Number divided into halves
+ 
+Given a number, return the number divided into its halves in an array.
+ 
+Examples:
+- `numDiv(4)` should return `[2, 2]`.
+- `numDiv(10)` should return `[5, 5]`.
+*/
+
+
+
+let numDiv = prompt("Please state a number to process")
+
+function process(numDiv) {
+    return [numDiv / 2, numDiv / 2];
+}
+console.log(process(numDiv))
+
