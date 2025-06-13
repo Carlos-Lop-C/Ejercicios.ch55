@@ -118,7 +118,7 @@ Examples:
 */
 
 
-
+/*
 let numDiv = prompt("Please state a number to process")
 
 function process(numDiv) {
@@ -126,3 +126,76 @@ function process(numDiv) {
 }
 console.log(process(numDiv))
 
+
+
+/**    3. Online status
+ 
+
+Display online status for a list of users.
+ 
+
+Example:
+- `onlineStatus(['mockIng99', 'J0eyPunch', 'glassedFer'])` should return `'mockIng99, J0eyPunch and 1 more online'`.
+
+ */
+
+
+
+/**   4. Array of Multiples
+ 
+
+Create a function that takes two parameters (number, length) and returns an array of length containing multiples of the number.
+ 
+
+Examples:
+- `arrayMultiplos(2, 10)` should return `[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]`.
+- `arrayMultiplos(17, 6)` should return `[17, 34, 51, 68, 85, 102]`.
+ 
+*/
+
+
+/*
+let variable = Number(prompt("Give a number for the sequence please"));
+let lenght = Number(prompt("State the lenght for the array"));
+
+function multiples(variable, lenght) {
+    const arranged = []
+    for (let i = 1; i <= lenght; i++) {
+        arranged.push(variable * i)
+    }
+    return arranged;
+}
+
+const array = multiples(variable, lenght)
+console.log(`Here is the array of ${variable}, ${lenght}: ${array}`)
+*/
+
+
+
+/**       5. Positive dominance in Array
+ 
+
+Write a function to determine if an array is positively dominant.
+An array is positively dominant when the majority of its elements are positive.
+ 
+
+Example:
+- `positiveDom([-1, -3, -5, 4, 6767])` should return `false`. */
+
+
+
+/*
+let positiveDom = prompt("State the numbers of your array separated by comas.");
+let checker = positiveDom.split(`,`).map(Number);
+
+function process(arr) {
+    let positives = arr.filter(num => num > 0).length;
+    let negatives = arr.filter(num => num < 0).length;
+    return positives > negatives
+}
+if (process(checker)) {
+    console.log("Your array is positive dominant")
+} else {
+    console.log("Your array is negative dominant")
+}
+*/
